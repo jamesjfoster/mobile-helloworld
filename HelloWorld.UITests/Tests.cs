@@ -22,10 +22,13 @@ namespace HelloWorld.UITests
         [Test]
         public void ViewIsDisplayed()
         {
+            //Default Test
             AppResult[] results = app.WaitForElement(c => c.Child("UIView"));
             app.Screenshot("First screen.");
 
             Assert.IsTrue(results.Any());
+
+
         }
     }
 }
